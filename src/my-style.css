@@ -246,6 +246,91 @@ nav .container .navbar-brand {
 
 /* Home End */
 
+
+/* Footer Start */
+
+.footer {
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.footer-copywright {
+    text-align: center;
+}
+
+.footer-body {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .footer-copywright {
+        text-align: center;
+    }
+
+    .footer-body {
+        text-align: center;
+    }
+}
+
+.footer h3 {
+    font-size: 1em;
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.blockquote-footer {
+    color: #a588c0;
+}
+
+.heart {
+    animation-name: heart-beat;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    display: inline-flex;
+}
+
+@keyframes heart-beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.react {
+    animation: react-animate 3s linear infinite;
+    display: inline-flex;
+    color: #00d8ff;
+    font-size: 20px;
+}
+
+@keyframes react-animate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer End */
+
+
+
+
+
 /* custom ui start */
 ::selection {
     background: var(--primary-font-color);

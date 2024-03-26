@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
+  AiFillHeart,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaReact } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -13,9 +13,9 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        {/* <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Saurabh Sahani</h3>
-        </Col> */}
+        <Col md="4" className="footer-copywright">
+          <h3>Made with&nbsp;&nbsp;<span className="red heart"><AiFillHeart /></span>&nbsp;&nbsp;in&nbsp;<span className="react"><FaReact /></span></h3>
+        </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}. All rights reserved</h3>
         </Col>
