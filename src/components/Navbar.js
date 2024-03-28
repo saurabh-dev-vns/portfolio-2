@@ -3,10 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function NavBar() {
+  const location = useLocation();
   const [navColour, updateNavbar] = useState(false);
-  const [isActive, setIsActive] = useState("/"); // Use boolean for active state
+  const [isActive, setIsActive] = useState(location.pathname);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
