@@ -1,12 +1,3 @@
-:root {
-    --primary-background: #16213E;
-    --secondary-background: #1A1A2E;
-    --primary-font-color: #E94560;
-    --secondary-font-color: #aeccf0;
-    --tertiary-font-color: #ffffff;
-    --image-background-color: #263969;
-}
-
 .red {
     color: var(--primary-font-color);
 }
@@ -37,6 +28,7 @@ nav .container .navbar-brand {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
     font-size: 18px;
     font-weight: 600;
 }
@@ -53,6 +45,14 @@ nav .container .navbar-brand {
 
 .active {
     color: var(--primary-font-color) !important;
+}
+
+.change-color {
+    background: var(--primary-font-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--secondary-background);
+    font-weight: 800;
 }
 
 @media (max-width:767px) {
@@ -407,7 +407,7 @@ nav .container .navbar-brand {
 }
 
 ::-webkit-scrollbar-track {
-    background: #163075;
+    background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {

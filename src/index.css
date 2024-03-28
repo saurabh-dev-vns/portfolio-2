@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
+:root {
+  --primary-background: #16213E;
+  --secondary-background: #1A1A2E;
+  --primary-font-color: #E94560;
+  --secondary-font-color: #aeccf0;
+  --tertiary-font-color: #ffffff;
+  --scrollbar-track: #163075;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-color: var(--secondary-background) !important;
 }

@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import ChangeColor from "./ChangeColor";
 
 function NavBar() {
   const location = useLocation();
@@ -28,28 +29,41 @@ function NavBar() {
         </Navbar.Brand>
         <Nav className="ms-auto">
           <Nav.Item>
-            <Nav.Link as={Link} to="/" className={isActive === "/" ? "active" : ""} onClick={() => setIsActive("/")}>
+            <Nav.Link
+              as={Link}
+              to="/"
+              className={isActive === "/" ? "active" : ""}
+              onClick={() => setIsActive("/")}
+            >
               Home
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link as={Link} to="/about" onClick={() => setIsActive("/about")} className={isActive === "/about" ? "active" : ""}>
+            <Nav.Link
+              as={Link}
+              to="/about"
+              onClick={() => setIsActive("/about")}
+              className={isActive === "/about" ? "active" : ""}
+            >
               About
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link as={Link} to="/project" onClick={() => setIsActive("/project")} className={isActive === "/project" ? "active" : ""}>
+            <Nav.Link
+              as={Link}
+              to="/project"
+              onClick={() => setIsActive("/project")}
+              className={isActive === "/project" ? "active" : ""}
+            >
               Projects
             </Nav.Link>
           </Nav.Item>
 
-          {/* <Nav.Item>
-            <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
-              Resume
-            </Nav.Link>
-          </Nav.Item> */}
+          <Nav.Item>
+            <ChangeColor />
+          </Nav.Item>
         </Nav>
       </Container>
     </Navbar>
