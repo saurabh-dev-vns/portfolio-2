@@ -15,13 +15,12 @@ function Projects() {
         <h3 className="project-heading">
           My Recent <strong className="red">Works </strong>
         </h3>
-        {/* <p style={{ color: "white" }}>
+        <p >
           New Projects are coming soon.
-        </p> */}
+        </p>
         <Col
           md={5}
-          style={{ paddingTop: "120px", paddingBottom: "50px" }}
-          className="about-img"
+          className="project-img"
         >
           <img src={NoProjectImg} alt="No Project" className="img-fluid" />
         </Col>

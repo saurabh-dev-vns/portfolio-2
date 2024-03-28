@@ -52,7 +52,7 @@ nav .container .navbar-brand {
 }
 
 .active {
-    color: var(--primary-font-color);
+    color: var(--primary-font-color) !important;
 }
 
 @media (max-width:767px) {
@@ -182,6 +182,10 @@ nav .container .navbar-brand {
     display: flex;
     justify-content: center;
     padding-top: 9em;
+}
+
+.home-image .img-fluid {
+    transform: scaleX(-1);
 }
 
 @media (max-width: 767px) {
@@ -328,7 +332,71 @@ nav .container .navbar-brand {
 /* Footer End */
 
 
+/* About Start */
+.about-section {
+    background: var(--primary-background);
+    color: var(--tertiary-font-color);
+}
 
+.about-heading {
+    text-align: center;
+    font-size: 2.1em;
+    padding-bottom: 20px;
+}
+
+.quote-card-view {
+    background: var(--primary-background);
+    color: var(--tertiary-font-color);
+    border: none;
+}
+
+.project-heading {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+@media(max-width:767px) {
+    .about-img {
+        padding: 50px 0;
+    }
+}
+
+
+
+/* About End */
+
+/* Project Start */
+
+.project-section {
+    color: var(--tertiary-font-color);
+    background: var(--primary-background);
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-img .img-fluid {
+    max-width: 70%;
+    height: auto;
+}
+
+@media(max-width:767px) {
+    .project-img {
+        padding: 50px 0;
+    }
+}
+
+/* Project End */
 
 
 /* custom ui start */

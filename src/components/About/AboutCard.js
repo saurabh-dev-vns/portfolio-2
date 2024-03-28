@@ -11,7 +11,6 @@ function AboutCard() {
             Hi Everyone, I am <span className="red">Saurabh Sahani </span>
             from <span className="red"> UP, India.</span>
             <br />
-            <br />
             I am currently pursuing my <span className="red">BTECH</span> in <span className="red">CSE</span> from KIT.
             <br />
           </p>
