@@ -61,14 +61,6 @@ function NavBar() {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link
-              as={Link}
-              to="https://blog.saurabhsahani.in"
-            >
-              Blog
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
             <ChangeColor />
           </Nav.Item>
         </Nav>
