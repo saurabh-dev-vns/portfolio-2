@@ -1,9 +1,6 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import Github from "./Github";
-// import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import codingGirlImg from "../../Assets/coding-girl.svg";
+import codingGirlImg from "../../assets/coding-girl.svg";
 
 function About() {
   return (
@@ -30,19 +27,6 @@ function About() {
             <img src={codingGirlImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        {/* <h3 className="project-heading">
-          Experience
-        </h3>
-        <div className="expe-ani">
-          <Techstack />
-        </div>
-
-        <h3 className="project-heading">
-          <strong className="red">Tools</strong> I use
-        </h3>
-        <Toolstack /> */}
-
-        {/* <Github /> */}
       </Container>
     </Container>
   );

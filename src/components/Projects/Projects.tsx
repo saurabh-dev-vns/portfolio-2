@@ -1,5 +1,5 @@
 import { Container, Col } from "react-bootstrap";
-import NoProjectImg from "../../Assets/no-project.svg"
+import NoProjectImg from "../../assets/no-project.svg"
 function Projects() {
   return (
     <Container fluid className="project-section">
