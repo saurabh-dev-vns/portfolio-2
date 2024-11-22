@@ -2,8 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/coding.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
+import FetchTrackerAPI from "../../api/trackerAPI";
 
 function Home() {
+  FetchTrackerAPI();
   return (
     <section>
       <Container fluid className="home-section">
